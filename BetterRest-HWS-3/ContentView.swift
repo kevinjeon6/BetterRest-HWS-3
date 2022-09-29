@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var sleepAmount = 8.0
+    @State private var wakeUp = Date.now
     
     var body: some View {
-        Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 2...18, step: 0.25)
+        DatePicker("Select a date", selection: $wakeUp, in: Date.now..., displayedComponents: .date)
     }
 }
 
@@ -30,4 +30,23 @@ struct ContentView_Previews: PreviewProvider {
   To fix the formatting we use the modifier .formatted()
   
   */
+
+
+/* Date Picker
+ 
+ Date.now means today's date
+ 
+ If you want the label gone from the DatePicker, use the modifier .labelHidden() so you can still keep the label for voiceover
+ 
+ displayComponents: .date will show the date, and not the time
+ 
+ *****in: goes before displayComponents*****
+ 
+ in: Date.now...
+ This is selecting todays date and going forward. Can't go backwards
+
+ Date range for past such as a birthday use ...Date()
+ 
+ */
+
 
