@@ -9,10 +9,47 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //MARK: - Properties
     @State private var wakeUp = Date.now
+    @State private var sleepAmount = 8.0
+    @State private var coffeeAmount = 1
+    
     
     var body: some View {
-        DatePicker("Select a date", selection: $wakeUp, in: Date.now..., displayedComponents: .date)
+        NavigationView {
+            VStack {
+                Text("When do you want to wake up?")
+                    .font(.headline)
+                
+                DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                
+                Text("Desired amount of sleep")
+                    .font(.headline)
+                
+                Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 3...18, step: 0.25)
+                
+                Text("Daily coffee intake")
+                    .font(.headline)
+                
+                Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...20)
+                
+                
+            }//Vstack
+        }
+        .navigationTitle("BetterRest")
+        .toolbar {
+            Button("Calculate") {
+                calculateBedTime()
+            }
+        }
+    }
+    
+    
+    //MARK: - Methods
+    
+    func calculateBedTime() {
+        
     }
 }
 
@@ -46,6 +83,10 @@ struct ContentView_Previews: PreviewProvider {
  This is selecting todays date and going forward. Can't go backwards
 
  Date range for past such as a birthday use ...Date()
+ 
+ 
+ 
+ Check Working with dates when formatting dates (Project 4, part 1)
  
  */
 
