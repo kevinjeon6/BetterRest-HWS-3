@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740B380928EA5BDD006C54C4 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 740B380828EA5BDD006C54C4 /* SleepCalculator.mlmodel */; };
 		746D321528E64E90002A2043 /* BetterRest_HWS_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D321428E64E90002A2043 /* BetterRest_HWS_3App.swift */; };
 		746D321728E64E90002A2043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D321628E64E90002A2043 /* ContentView.swift */; };
 		746D321928E64E93002A2043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746D321828E64E93002A2043 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740B380828EA5BDD006C54C4 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		746D321128E64E90002A2043 /* BetterRest-HWS-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetterRest-HWS-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		746D321428E64E90002A2043 /* BetterRest_HWS_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRest_HWS_3App.swift; sourceTree = "<group>"; };
 		746D321628E64E90002A2043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				746D321428E64E90002A2043 /* BetterRest_HWS_3App.swift */,
 				746D321628E64E90002A2043 /* ContentView.swift */,
+				740B380828EA5BDD006C54C4 /* SleepCalculator.mlmodel */,
 				746D321828E64E93002A2043 /* Assets.xcassets */,
 				746D321A28E64E93002A2043 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740B380928EA5BDD006C54C4 /* SleepCalculator.mlmodel in Sources */,
 				746D321728E64E90002A2043 /* ContentView.swift in Sources */,
 				746D321528E64E90002A2043 /* BetterRest_HWS_3App.swift in Sources */,
 			);
